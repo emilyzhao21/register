@@ -1,0 +1,25 @@
+1.
+接口说明：获取短信验证码
+接口地址：registerCode.php
+请求方式：post
+接口传参：mobile 手机号
+返回类型  json
+接口返回：{"code":"10000","msg":"","result":{"time":"","mobile":""}}
+        code 当前业务逻辑的处理成功失败的标识  10000 成功
+        msg  当前系统返回给前端提示
+        result 返回给前端的数据
+                time  倒计时时间
+                mobile 手机号
+
+2.
+接口说明：注册
+接口地址：register.php
+请求方式：post
+接口传参：name 用户名 pass 密码  repass 重复密码 code 验证码  mobile 手机号
+返回类型  json
+接口返回：{"code":"10000","msg":"","result":{"name":""}}
+        code 当前业务逻辑的处理成功失败的标识  10000 成功  10001 用户存在 10002 没有输入用户名
+        msg  当前系统返回给前端提示
+        result 返回给前端的数据
+                name  当前注册成功的用户
+
